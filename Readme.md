@@ -19,8 +19,8 @@ heroku login
 ```
 3. Clone the application into your directory:
 ```
-git clone ""
-cd
+git clone "https://daodear@bitbucket.org/muictsenior/heroku-imgproc.git"
+cd heroku-imgproc
 ``` 
 3. Pipenv installed locally by running `pip install pipenv`.
 4. Use Pipenv to create a virtualenv (Python 2.7) and install your dependencies:
