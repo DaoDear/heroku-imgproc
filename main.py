@@ -9,7 +9,7 @@ def hello_world():
 @app.route('/view')
 def size():
   #return "It's me"
-  obj = obj_size("./images/example_03.png", 3.5)
+  obj = obj_size("./images/example_01.png", 0.955)
   return obj.compute()
 
 if __name__ == '__main__':
