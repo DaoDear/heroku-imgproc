@@ -11,6 +11,9 @@ name = "pypi"
 
 [packages]
 
+gunicorn = "*"
+flask = "*"
+imutils = "*"
 
 
 [requires]
