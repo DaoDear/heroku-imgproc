@@ -4,7 +4,7 @@ app = Flask(__name__)
 
 @app.route('/')
 def hello_world():
-  return 'Hello, DaoDear!'
+  return 'Hello, DaoDear!!'
 
 @app.route('/view')
 def size():
