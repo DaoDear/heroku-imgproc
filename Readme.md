@@ -13,7 +13,9 @@ Related sources: [Measuring size of objects in an image with OpenCV](https://www
 First, [Install the Heroku Command Line Interface (CLI)](https://devcenter.heroku.com/articles/getting-started-with-python#set-up)
 
 Log in using the email address and password you used when creating your Heroku account:
-`heroku login`
+```
+heroku login
+```
 
 Clone the application into your directory:
 ```
@@ -30,16 +32,27 @@ pipenv install
 ```
 
 Then, activate the virtualenv.
-`pipenv shell`
+```
+pipenv shell
+```
 
 Create an app on Heroku, which prepares Heroku to receive your source code:
-`heroku create`
+```
+heroku create
+```
 Heroku generates a random name for your app, or you can pass a parameter to specify your own app name.
 
 Download heroku buildpack to set up python with opencv from https://github.com/diogojc/heroku-buildpack-python-opencv-scipy by:
-`heroku buildpacks:set https://github.com/diogojc/heroku-buildpack-python-opencv-scipy -a <myapp>`
+```
+heroku buildpacks:set https://github.com/diogojc/heroku-buildpack-python-opencv-scipy -a <myapp>
+```
 
 Then deploy your code:
-`git push heroku master`
+```
+git push heroku master
+```
 
-Open your application on heroku: `heroku open`
+Open your application on heroku: 
+```
+heroku open
+```
