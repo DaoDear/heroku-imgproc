@@ -10,9 +10,7 @@ Related sources: [Measuring size of objects in an image with OpenCV](https://www
 
 
 ##Installation
-First, [Install the Heroku Command Line Interface (CLI)](https://devcenter.heroku.com/articles/getting-started-with-python#set-up)
-
-Log in using the email address and password you used when creating your Heroku account:
+First, [Install the Heroku Command Line Interface (CLI)](https://devcenter.heroku.com/articles/getting-started-with-python#set-up) and log in using the email address and password you used when creating your Heroku account:
 ```
 heroku login
 ```
