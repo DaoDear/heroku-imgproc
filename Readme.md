@@ -36,15 +36,16 @@ Then, activate the virtualenv.
 pipenv shell
 ```
 
-Create an app on Heroku, which prepares Heroku to receive your source code:
+Create an app on Heroku, which prepares Heroku to receive your source code. Also, set your heroku to use cedar14 to enable required library for image processing:
 ```
 heroku create
+heroku stack:set cedar-14 -a <app name>
 ```
-Heroku generates a random name for your app, or you can pass a parameter to specify your own app name.
+(Note: Heroku generates a random name for your app, or you can pass a parameter to specify your own app name.)
 
 Download heroku buildpack to set up python with opencv from https://github.com/diogojc/heroku-buildpack-python-opencv-scipy by:
 ```
-heroku buildpacks:set https://github.com/diogojc/heroku-buildpack-python-opencv-scipy -a <myapp>
+heroku buildpacks:set https://github.com/diogojc/heroku-buildpack-python-opencv-scipy -a <app name>
 ```
 
 Then deploy your code:
