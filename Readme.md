@@ -57,3 +57,5 @@ Open your application on heroku:
 ```
 heroku open
 ```
+
+If you want to use image processing function, you can put `/view` after your app url.
