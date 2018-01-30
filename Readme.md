@@ -5,7 +5,8 @@ This is an application to measure size of objects on input image.
 Related sources: [Measuring size of objects in an image with OpenCV](https://www.pyimagesearch.com/2016/03/28/measuring-size-of-objects-in-an-image-with-opencv/), [Heroku buildpack with Python, OpenCV, Numpy and Scipy](https://github.com/diogojc/heroku-buildpack-python-opencv-scipy)
 
 ## Prerequisite
-- A free Heroku account.
+- A free Heroku account
+- Ubuntu 16.04
 - Python 2.7
 
 
