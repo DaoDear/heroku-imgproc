@@ -17,7 +17,7 @@ heroku login
 
 Clone the application into your directory:
 ```
-git clone "https://daodear@bitbucket.org/muictsenior/heroku-imgproc.git"
+git clone "https://github.com/DaoDear/heroku-imgproc.git"
 cd heroku-imgproc
 ``` 
 
