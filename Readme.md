@@ -1,16 +1,15 @@
-# Python Flask app with OpenCV and SciPy on Heroku
+#Python Flask app with OpenCV and SciPy on Heroku
 
 This is an application to measure size of objects on input image.
 
 Related sources: [Measuring size of objects in an image with OpenCV](https://www.pyimagesearch.com/2016/03/28/measuring-size-of-objects-in-an-image-with-opencv/), [Heroku buildpack with Python, OpenCV, Numpy and Scipy](https://github.com/diogojc/heroku-buildpack-python-opencv-scipy)
 
-## Prerequisite
-- A free Heroku account
-- Ubuntu 16.04
+##Prerequisite
+- A free Heroku account.
 - Python 2.7
 
 
-## Installation
+##Installation
 First, [Install the Heroku Command Line Interface (CLI)](https://devcenter.heroku.com/articles/getting-started-with-python#set-up) and log in using the email address and password you used when creating your Heroku account:
 ```
 heroku login
@@ -18,7 +17,7 @@ heroku login
 
 Clone the application into your directory:
 ```
-git clone "https://github.com/DaoDear/heroku-imgproc.git"
+git clone "https://daodear@bitbucket.org/muictsenior/heroku-imgproc.git"
 cd heroku-imgproc
 ``` 
 

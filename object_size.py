@@ -88,13 +88,20 @@ class obj_size():
 			cv2.circle(orig, (int(trbrX), int(trbrY)), 5, (255, 0, 0), -1)
 
 			# draw lines between the midpoints
-			cv2.line(orig, (int(tltrX), int(tltrY)), (int(blbrX), int(blbrY)),
+			###cv2.line(orig, (int(tltrX), int(tltrY)), (int(blbrX), int(blbrY)),
+			###	(255, 0, 255), 2)
+			###cv2.line(orig, (int(tlblX), int(tlblY)), (int(trbrX), int(trbrY)),
+			###	(255, 0, 255), 2)
+
+			cv2.line(orig, (int(tr[0]), int(tr[1])), (int(bl[0]), int(bl[1])),
 				(255, 0, 255), 2)
 			cv2.line(orig, (int(tlblX), int(tlblY)), (int(trbrX), int(trbrY)),
 				(255, 0, 255), 2)
 
 			# compute the Euclidean distance between the midpoints
-			dA = dist.euclidean((tltrX, tltrY), (blbrX, blbrY))
+			###dA = dist.euclidean((tltrX, tltrY), (blbrX, blbrY))
+			###dB = dist.euclidean((tlblX, tlblY), (trbrX, trbrY))
+			dA = dist.euclidean((tr[0], tr[1]), (bl[0], bl[1]))
 			dB = dist.euclidean((tlblX, tlblY), (trbrX, trbrY))
 
 			# if the pixels per metric has not been initialized, then
@@ -108,12 +115,12 @@ class obj_size():
 			dimB = dB / pixelsPerMetric
 
 			# keep dimB value in a list
-			mylist.append(dimB)
+			mylist.append(dimA)
 			##print (mylist[-1])
 
 			# draw the object sizes on the image
 			##cv2.putText(orig, "{:.1f}in".format(dimA),
-			##	(int(tltrX - 15), int(tltrY - 10)), cv2.FONT_HERSHEY_SIMPLEX,
+			##	(int(tr[0] - 15), int(tr[1] - 10)), cv2.FONT_HERSHEY_SIMPLEX,
 			##	0.65, (255, 255, 255), 2)
 			##cv2.putText(orig, "{:.1f}in".format(dimB),
 			##	(int(trbrX + 10), int(trbrY)), cv2.FONT_HERSHEY_SIMPLEX,
@@ -124,5 +131,5 @@ class obj_size():
 			##cv2.waitKey(0)
 
 		# print all dimB in a list
-		return str(mylist)
+		return str(mylist[-1])
 
